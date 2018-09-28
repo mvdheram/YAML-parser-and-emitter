@@ -39,26 +39,26 @@ def show(fname,fdata):
 
 
 def Main():
-    fname = "data.yaml"
-parser = argparse.ArgumentParser(description='Yaml file loader and dumper for contacts')
-parser.add_argument('-a','--add_name',metavar = '', help ='Name of the contact')
-parser.add_argument('-ph','--phone_number',type = int,metavar = '', help = 'phone number of contact')
-parser.add_argument('-c','--city',metavar = '', help ='city of contact')
-parser.add_argument('-em','--email',metavar = '', help = 'email of the contact')
-parser.add_argument('-sh','--show',metavar = '', help = 'show the contact')
-group = parser.add_mutually_exclusive_group()
-group.add_argument('-ls','--list',action = 'store_true',help = 'print  list')
-group.add_argument('-v','--verbose',action = 'store_true',help = 'print verbose list ')
-args = parser.parse_args()
-data = add(args.add_name,args.phone_number,args.city,args.email,fname)
+    fname = "C:\Proj\YAML-parser-and-emitter\.idea\data1.yaml"
+    parser = argparse.ArgumentParser(description='Yaml file loader and dumper for contacts')
+    parser.add_argument('-a','--add_name',metavar = '', help ='Name of the contact')
+    parser.add_argument('-ph','--phone_number',type = int,metavar = '', help = 'phone number of contact')
+    parser.add_argument('-c','--city',metavar = '', help ='city of contact')
+    parser.add_argument('-em','--email',metavar = '', help = 'email of the contact')
+    parser.add_argument('-sh','--show',metavar = '', help = 'show the contact')
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('-ls','--list',action = 'store_true',help = 'print  list')
+    group.add_argument('-v','--verbose',action = 'store_true',help = 'print verbose list ')
+    args = parser.parse_args()
+    add(args.add_name,args.phone_number,args.city,args.email,fname)
 
-if args.show:
-    print(show(fname,args.show))
+    if args.show:
+        print(show(fname,args.show))
 
-if args.list:
-    print(list(fname))
-elif args.verbose:
-    print ("\nlist of contacts in file name: " + fname + " are:\n\n"  + list(fname))
+    if args.list:
+        print(list(fname))
+    elif args.verbose:
+        print ("\nlist of contacts in file name: " + fname + " are:\n\n"  + list(fname))
 
 
 if __name__ == "__main__":
