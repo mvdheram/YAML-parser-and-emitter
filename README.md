@@ -5,12 +5,14 @@ A Yaml parser & emitter for managing contacts
 Operations:
 
 1.Adding contact
+
 2.List all the contact
   - Quite 
   - Verbose
+  
 3.Show a perticular contact
 
-#CLI for YAML-Parser-emitter:
+# CLI for YAML-Parser-emitter:
 
 Usage: `parser.py [-h] [-a] [-ph] [-c] [-em] [-sh] [-ls | -v]`
 
@@ -27,37 +29,37 @@ optional arguments:
   -ls, --list           print list
   -v, --verbose         print verbose list
   
-  #Results:
+  # Results:
 
 Add:
 ```C:\>python parser.py -[add_name|a] Meher -[phone_number|ph] 7 -[city|c] meher -[email|em] gm```
  
 Show: 
-```C:\>python test5.py --[show|sh] Meher```
->>`('Meher', {'Email': 'gm', 'city': 'meher', 'phone_number': 7})`
+C:\>python test5.py --[show|sh] Meher
+>>('Meher', {'Email': 'gm', 'city': 'meherabad', 'phone_number': 7})
 
 List:
-```C:\t>python test5.py -[list|ls]```
+C:\t>python test5.py -[list|ls]
 
->>`Meher:
+>>Meher:
   >> Email: gm
-  >>city: meher
+  >>city: meherabad
   >>phone_number: 7
 >>kim:
   >>Email: null
   >>city: null
-  >>phone_number: 888`
+  >>phone_number: 888
 
 Verbose:
-```C:\>python test5.py -[verbose|v]```
+C:\>python test5.py -[verbose|v]
 
-`list of contacts in file name: data.yaml are:
+>>list of contacts in file name: data.yaml are:
 
 >>Meher:
   >>Email: gm
-  >>city: meher
+  >>city: meherabad
   >>phone_number: 7
 >>kim:
   >>Email: null
   >>city: null
-  >>phone_number: 888"`
+  >>phone_number: 888"
