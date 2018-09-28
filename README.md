@@ -14,19 +14,28 @@ Operations:
 
 # CLI for YAML-Parser-emitter:
 
+Variable : `fname` specify the file path to dump or to load from 
+
 Usage: `parser.py [-h] [-a] [-ph] [-c] [-em] [-sh] [-ls | -v]`
 
 Yaml file loader and dumper for contacts
 
 optional arguments:
+
   -h, --help            show this help message and exit
+  
   -a , --add_name       Name of the contact
-  -ph , --phone_number
-                        phone number of contact
+  
+  -ph , --phone_number  phone number of contact
+  
   -c , --city           city of contact
+  
   -em , --email         email of the contact
+  
   -sh , --show          show the contact
+  
   -ls, --list           print list
+  
   -v, --verbose         print verbose list
   
   # Results:
