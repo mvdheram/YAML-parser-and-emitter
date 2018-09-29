@@ -44,11 +44,11 @@ Add:
 ```C:\>python parser.py -[add_name|a] Meher -[phone_number|ph] 7 -[city|c] meherabad -[email|em] gm```
  
 Show: 
-C:\>python test5.py --[show|sh] Meher
+`C:\>python test5.py --[show|sh] Meher`
 >>('Meher', {'Email': 'gm', 'city': 'meherabad', 'phone_number': 7})
 
 List:
-C:\t>python test5.py -[list|ls]
+`C:\>python test5.py -[list|ls]`
 
 >>Meher:
   >> Email: gm
@@ -60,7 +60,7 @@ C:\t>python test5.py -[list|ls]
   >>phone_number: 888
 
 Verbose:
-C:\>python test5.py -[verbose|v]
+`C:\>python test5.py -[verbose|v]`
 
 >>list of contacts in file name: data.yaml are:
 
