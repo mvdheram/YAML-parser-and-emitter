@@ -41,7 +41,7 @@ optional arguments:
   # Results:
 
 Add:
-```C:\>python parser.py -[add_name|a] Meher -[phone_number|ph] 7 -[city|c] meher -[email|em] gm```
+```C:\>python parser.py -[add_name|a] Meher -[phone_number|ph] 7 -[city|c] meherabad -[email|em] gm```
  
 Show: 
 C:\>python test5.py --[show|sh] Meher
